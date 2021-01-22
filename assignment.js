@@ -32,29 +32,30 @@ function budgetCalculator(watch, phone, laptop){
 //function 3:  hotelCost
 
 function hotelCost(stayingDays){
-    const fair10 = 100; 
-    const fair20 = 80; 
-    const fairElse = 50;
+    const rent10 = 100; 
+    const rent20 = 80; 
+    const rentElse = 50;
 
     if(stayingDays>0){
 
         if (stayingDays <=10){
-            let totalfair = fair10* stayingDays;
-            return totalfair;
+            let totalRent = rent10* stayingDays;
+            return totalRent;
         }
         else if(stayingDays <=20){
-            let totalfair = 1000 + fair20 * (stayingDays-10); // calculating extra days from initial 10 days.
-            return totalfair;
+            let totalRent = 1000 + rent20 * (stayingDays-10); // calculating extra days from initial 10 days.
+            return totalRent;
         }
         else{
-            let totalfair = 1800 + fairElse * (stayingDays-20); 
-            return totalfair;
+            let totalRent = 1800 + rentElse * (stayingDays-20); // calculating extra days from initial 20 days.
+            return totalRent;
         }
     }
     else{
         return 'Stay atleast one day to give us some money.'
     }
 }
+
 
 // function 4:  megaFriend
 
