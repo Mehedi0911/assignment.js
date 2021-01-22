@@ -1,4 +1,4 @@
-
+//https://github.com/Mehedi0911/assignment.js
 
 //function 1:  kilometerToMeter
 
@@ -11,7 +11,6 @@ function  kilometerToMeter(kilometer){
         return 'Caution!! Value Can not be 0 or a Negative Number.';
     }
 }
-
 
 //function 2:  budgetCalculator
 
@@ -29,7 +28,6 @@ function budgetCalculator(watch, phone, laptop){
         return 'Quantity can not be 0 or Negative';
     }
 }
-
 
 //function 3:  hotelCost
 
@@ -49,7 +47,7 @@ function hotelCost(stayingDays){
             return totalfair;
         }
         else{
-            var totalfair = 1800 + fairElse * (stayingDays-20); 
+            let totalfair = 1800 + fairElse * (stayingDays-20); 
             return totalfair;
         }
     }
